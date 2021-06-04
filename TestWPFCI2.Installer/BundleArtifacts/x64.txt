@@ -1,2 +1,2 @@
-MainPackage=C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2.Installer\bin\x64\Debug\TestWPFCI2.Installer_1.0.2.0_x64_Debug.msix
-SymbolPackage=C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2.Installer\obj\x64\Debug\Symbols\TestWPFCI2.Installer_1.0.2.0_x64_Debug.appxsym
+MainPackage=C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2.Installer\bin\x64\Release\TestWPFCI2.Installer_1.0.4.0_x64.msix
+SymbolPackage=C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2.Installer\obj\x64\Release\Symbols\TestWPFCI2.Installer_1.0.4.0_x64.appxsym

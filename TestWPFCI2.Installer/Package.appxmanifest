@@ -9,7 +9,7 @@
   <Identity
     Name="5b4a438e-a50f-4969-98d9-94dae9c053ed"
     Publisher="CN=Kirill"
-    Version="1.0.2.0" />
+    Version="1.0.4.0" />
 
   <Properties>
     <DisplayName>TestWPFCI2.Installer</DisplayName>
