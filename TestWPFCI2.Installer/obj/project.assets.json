@@ -4,91 +4,6 @@
     "UAP,Version=v10.0.17763": {
       "TestWPFCI2/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-arm": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-arm-aot": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-arm64-aot": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-x64": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-x64-aot": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-x86": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "compile": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestWPFCI2.dll": {}
-        }
-      }
-    },
-    "UAP,Version=v10.0.17763/win10-x86-aot": {
-      "TestWPFCI2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
         "compile": {
           "bin/placeholder/TestWPFCI2.dll": {}
         },
@@ -164,34 +79,10 @@
           "net471",
           "net472",
           "net48",
-          "net5.0-windows10.0.17763",
-          "net461"
+          "net5.0-windows10.0.17763"
         ],
         "assetTargetFallback": true,
         "warn": true
-      }
-    },
-    "runtimes": {
-      "win10-arm": {
-        "#import": []
-      },
-      "win10-arm-aot": {
-        "#import": []
-      },
-      "win10-arm64-aot": {
-        "#import": []
-      },
-      "win10-x64": {
-        "#import": []
-      },
-      "win10-x64-aot": {
-        "#import": []
-      },
-      "win10-x86": {
-        "#import": []
-      },
-      "win10-x86-aot": {
-        "#import": []
       }
     }
   }
