@@ -57,7 +57,7 @@ jobs:
 
     env:
       Solution_Name: TestWPFCI2    
-      SigningCertificate: GitHubActions.pfx
+      SigningCertificate: Kirill.pfx
       # Replace with your solution name, i.e. MyWpfApp.sln.
       #Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       Wap_Project_Directory: TestWPFCI2.Installer    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
