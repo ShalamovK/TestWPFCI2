@@ -61,7 +61,7 @@
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
-    <AppInstallerUri>C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2\bin\Debug</AppInstallerUri>
+    <AppInstallerUri>C:\Users\Kirill\source\repos\TestWPFCI2\TestWPFCI2.Installer\AppPackages</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <EntryPointProjectUniqueName>..\TestWPFCI2\TestWPFCI2.csproj</EntryPointProjectUniqueName>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
