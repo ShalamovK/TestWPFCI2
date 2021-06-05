@@ -34,6 +34,7 @@
         },
         "frameworks": {
           "uap10.0.17763": {
+            "targetAlias": "net451",
             "projectReferences": {
               "C:\\Users\\Kirill\\source\\repos\\TestWPFCI2\\TestWPFCI2\\TestWPFCI2.csproj": {
                 "projectPath": "C:\\Users\\Kirill\\source\\repos\\TestWPFCI2\\TestWPFCI2\\TestWPFCI2.csproj"
@@ -44,6 +45,7 @@
       },
       "frameworks": {
         "uap10.0.17763": {
+          "targetAlias": "net451",
           "imports": [
             "netcoreapp3.1",
             "netcoreapp3.0",
@@ -54,6 +56,7 @@
             "net472",
             "net48",
             "net5.0-windows10.0.17763",
+            "net6.0-windows10.0.17763",
             "net461"
           ],
           "assetTargetFallback": true,
