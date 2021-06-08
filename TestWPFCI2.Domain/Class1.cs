@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace TestWPFCI2.Domain
 {
     public class Class1
     {
-        public string ItsATest;
+        private static readonly ILog log = LogManager.GetLogger(typeof(Class1));
+
     }
 }
