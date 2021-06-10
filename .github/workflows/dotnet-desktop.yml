@@ -114,7 +114,7 @@ jobs:
       run: |
         $currentDirectory = Get-Location
         $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:Wap_Project_Directory -AdditionalChildPath $env:SigningCertificate
-        $exePath = Join-Path -Path $currentDirectory -ChildPath $env:App_Project_Directory -AdditionalChildPath \bin\Release\TestWPFCI2.exe
+        $exePath = Join-Path -Path $currentDirectory -ChildPath \bin\Release\TestWPFCI2.exe
         & 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x86/signtool.exe' sign /f $certificatePath /p '${{ secrets.Pfx_Key }}' /t http://timestamp.comodoca.com/authenticode  $exePath
 
     # Create the app package by building and packaging the Windows Application Packaging project
