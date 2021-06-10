@@ -92,16 +92,22 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>7A6EBB75C489E512449E4A135CE0F6A11E0D6221</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>F6103A7FE7AA056B934FB1C71E158A4732B81954</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>TestWPFCI2_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>GitHubActionsWorkflow.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GitHubActionsWorkflow1.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
@@ -183,7 +189,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="TestWPFCI2_TemporaryKey.pfx" />
+    <None Include="GitHubActionsWorkflow1.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
