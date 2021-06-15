@@ -114,7 +114,7 @@ jobs:
       run: |
         $currentDirectory = Get-Location
         $snExePath = Join-Path -Path $currentDirectory -ChildPath $env:App_Project_Directory -AdditionalChildPath SnInstallPfx.exe
-        $env:SigningCertificate ${{ secrets.Pfx_Key }} VS_KEY_A8866388FAC1CCAE
+        $env:SigningCertificate 123 VS_KEY_A8866388FAC1CCAE
 
     #- name: Code Sign
     #  run: |
