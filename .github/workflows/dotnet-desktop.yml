@@ -133,8 +133,8 @@ jobs:
         Configuration: ${{ matrix.configuration }}
 
     # Remove the pfx
-    - name: Remove the app pfx
-      run: Remove-Item -path $env:App_Project_Directory\$env:SigningCertificate
+    #- name: Remove the app pfx
+    #  run: Remove-Item -path $env:App_Project_Directory\$env:SigningCertificate
 
     - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\$env:SigningCertificate
