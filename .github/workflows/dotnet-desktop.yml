@@ -106,9 +106,13 @@ jobs:
         $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:Wap_Project_Directory -AdditionalChildPath $env:SigningCertificate
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
-    #- name: Install Certificate
-    #  shell: pwsh
-    #  run: sn -i $env.SigningCertificate VS_KEY_A8866388FAC1CCAE
+    - name: Install Certificate
+      shell: pwsh
+      run: sn -i $env.SigningCertificate VS_KEY_A8866388FAC1CCAE
+
+    - name: Certificate Pass
+      shell: pwsh
+      run: "123"
 
     #- name: Code Sign
     #  run: |
