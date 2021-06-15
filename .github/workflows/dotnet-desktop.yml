@@ -85,12 +85,12 @@ jobs:
     #- name: Execute unit tests
     #  run: dotnet test
 
-    - name: Decode the app pfx
-      run: |
-        $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
-        $currentDirectory = Get-Location
-        $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:App_Project_Directory -AdditionalChildPath $env:SigningCertificate
-        [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
+    #- name: Decode the app pfx
+    #  run: |
+    #    $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
+    #    $currentDirectory = Get-Location
+    #    $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:App_Project_Directory -AdditionalChildPath $env:SigningCertificate
+    #    [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
@@ -114,7 +114,7 @@ jobs:
       run: |
         $currentDirectory = Get-Location
         $snExePath = Join-Path -Path $currentDirectory -ChildPath $env:App_Project_Directory -AdditionalChildPath SnInstallPfx.exe
-        $env:SigningCertificate 123 VS_KEY_A8866388FAC1CCAE
+        $env:SigningCertificate "${{ secrets.Base64_Encoded_Pfx }}" VS_KEY_A8866388FAC1CCAE
 
     #- name: Code Sign
     #  run: |
