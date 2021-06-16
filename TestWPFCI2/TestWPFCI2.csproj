@@ -215,7 +215,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>$(signtool) sign /f "$env:SigningCertificate" /p "${{ secrets.Pfx_Key }}" "$(TargetPath)"
+    <PostBuildEvent>$(signtool) sign /f $env:SigningCertificate /p ${{ secrets.Pfx_Key }} $(TargetPath)
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
