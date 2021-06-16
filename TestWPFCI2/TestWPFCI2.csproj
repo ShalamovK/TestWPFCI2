@@ -215,7 +215,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>sign /f "$(PackageCertificateKeyFile)" /p "$(PackageCertificatePassword)" $(TargetPath)
+    <PostBuildEvent>sign /f "$(PackageCertificateKeyFile)" /p "$(PackageCertificatePassword)" "$(TargetPath)"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
