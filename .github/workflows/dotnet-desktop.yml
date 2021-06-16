@@ -105,6 +105,11 @@ jobs:
         $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:Wap_Project_Directory -AdditionalChildPath $env:SigningCertificate
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
+    - name: Check signtool location
+      run: |
+        $sign_tool_path = where signtool
+        echo $sign_tool_path
+
     #- name: Install Certificate
     #  shell: pwsh
     #  run: sn -i $env.SigningCertificate VS_KEY_A8866388FAC1CCAE
