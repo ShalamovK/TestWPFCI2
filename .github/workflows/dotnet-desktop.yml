@@ -134,8 +134,9 @@ jobs:
     - name: Create the app package
       run: |
         $currentDirectory = Get-Location
+        $certificatePath = Join-Path -Path $currentDirectory -ChildPath $env:Wap_Project_Directory -AdditionalChildPath $env:SigningCertificate
         $signToolPath = Join-Path -Path $currentDirectory -ChildPath signtool.exe
-        msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=$env:SigningCertificate /p:PackageCertificatePassword=${{ secrets.Pfx_Key }} /p:SignTool=$signToolPath
+        msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=$env:SigningCertificate /p:PackageCertificatePassword=${{ secrets.Pfx_Key }} /p:SignTool=$signToolPath /p:CertPath=$certificatePath
       env:
         Appx_Bundle: Always
         Appx_Bundle_Platforms: x86|x64
