@@ -215,7 +215,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86\signtool.exe" sign /f "C:\Users\Kirill\source\repos\syntropy-client-net\SyntropyNet.WindowsApp.MsixInstaller\SyntropyNet.WindowsApp.MsixInstaller_TemporaryKey.pfx" /p "123" "$(TargetPath)"
+</PostBuildEvent>
   </PropertyGroup>
 </Project>
